@@ -10,3 +10,5 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+alarmfax-ocr/src/test/java/de/friedrichs/alarmfax/ocr/TesseractHandlerTest.java
+alarmfax-ocr/src/test/resources/Test_Fax_1.tif
