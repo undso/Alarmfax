@@ -12,3 +12,8 @@
 hs_err_pid*
 alarmfax-ocr/src/test/java/de/friedrichs/alarmfax/ocr/TesseractHandlerTest.java
 alarmfax-ocr/src/test/resources/Test_Fax_1.tif
+alarmfax-ocr/src/test/resources/Test_Fax_2.tif
+alarmfax-ocr/src/test/resources/Cisco_fax.tif
+alarmfax-ocr/src/test/resources/Cisco_fax (3).tif
+alarmfax-ocr/src/test/resources/Cisco_fax (2).tif
+alarmfax-ocr/src/test/resources/Cisco_fax (1).tif
