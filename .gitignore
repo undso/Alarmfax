@@ -17,3 +17,10 @@ alarmfax-ocr/src/test/resources/Cisco_fax.tif
 alarmfax-ocr/src/test/resources/Cisco_fax (3).tif
 alarmfax-ocr/src/test/resources/Cisco_fax (2).tif
 alarmfax-ocr/src/test/resources/Cisco_fax (1).tif
+/alarmfax-ocr/target/
+/alarmfax-core/target/
+/alarmfax-ocr/src/test/resources/KonradAdenauerStr.tif
+/alarmfax-ocr/src/test/resources/Salhofstr.tif
+/alarmfax-ocr/src/test/resources/Oberwiese.tif
+/alarmfax-ocr/src/test/resources/RodheimerWald.tif
+/alarmfax-ocr/src/test/resources/Klappergasse.tif
