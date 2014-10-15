@@ -62,12 +62,12 @@ public class OCRProcessor implements Processor {
         String strasse = "";
 
         for(String string : response.getRows()){
-            if (string.toUpperCase().contains(ORT) && ort.isEmpty()) {
-                ort = string.toUpperCase();
-                LOG.debug("Ort: {}", ort);
-            } else if (string.toUpperCase().contains(ORTSTEIL) && ortsteil.isEmpty()) {
+            if (string.toUpperCase().contains(ORTSTEIL) && ortsteil.isEmpty()) {
                 ortsteil = string.toUpperCase();
                 LOG.debug("Ortsteil: {}", ortsteil);
+            } else if (string.toUpperCase().contains(ORT) && ort.isEmpty()) {
+                ort = string.toUpperCase();
+                LOG.debug("Ort: {}", ort);
             } else if (string.toUpperCase().contains(STRASSE) && strasse.isEmpty()) {
                 strasse = string.toUpperCase();
                 LOG.debug("Straße: {}", strasse);
