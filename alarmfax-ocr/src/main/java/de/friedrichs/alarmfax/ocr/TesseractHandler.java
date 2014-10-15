@@ -52,7 +52,7 @@ public class TesseractHandler {
 
     public OCRResponse optimizeOutput(OCRResponse response) throws OCRException {
         try {
-            for (String line : FileUtils.readLines(response.getOutput(), "UTF8")) {
+            for (String line : FileUtils.readLines(response.getOutput(), "UTF-8")) {
                 response.getRows().add(normalizeAddress(line));
             }
         } catch (IOException ie) {
@@ -60,10 +60,17 @@ public class TesseractHandler {
         }
         return response;
     }
-    
+
     protected String normalizeAddress(String str) {
         return str.replaceAll("(?<=\\w)[B]{1}(?=\\w)", "ß")
-                .replaceAll("(?<=\\w)[1]{1}(?=\\w)", "l");
+                .replaceAll("(?<=\\w)[1]{1}(?=\\w)", "l")
+                .replaceAll("(?<=\\w)[—]{1}(?=\\w)", "-")
+                .replaceAll("[o]{1}[n]{1}[e]{1}[r]{1}[-]{1}(?=\\w)", "Ober-")
+                .replaceAll("(?<=\\w)[o]{1}[s]{1}[n]{1}[a]{1}(?=\\w)", "osba")
+                .replaceAll("(?<=\\w)[a]{1}[e]{1}[h]{1}", "ach")
+                .replaceAll("[K]{1}[o]{1}[h]{1}[r]{1}(?=\\w)", "Konr")
+                .replaceAll("(?<=\\w)[d]{1}[e]{1}[h]{1}[a]{1}(?=\\w)", "dena")
+                .replaceAll("(?<=\\w)[-]{1}[s]{1}[t]{1}[r]{1}[a]{1}[a]{1}(?=\\w)", "-Straß");
     }
 
     /**
