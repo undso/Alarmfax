@@ -11,8 +11,10 @@ import java.util.List;
  */
 public class OCRResponse implements Serializable {
 
+    private static final long serialVersionUID = 289438395958265095L;
+
     private File orgInput;
-    private File output;    
+    private File output;
     private List<String> rows;
 
     public OCRResponse() {
@@ -50,7 +52,7 @@ public class OCRResponse implements Serializable {
      * @return the rows
      */
     public List<String> getRows() {
-        if(rows == null){
+        if (rows == null) {
             rows = new ArrayList<>();
         }
         return rows;
