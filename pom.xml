@@ -27,8 +27,8 @@
     <modules>
         <module>alarmfax-core</module>
         <module>alarmfax-maps</module>
-        <module>alarmfax-ocr</module>
         <module>alarmfax-monitor</module>
+        <module>alarmfax-ocr</module>
     </modules>
     
     <properties>
